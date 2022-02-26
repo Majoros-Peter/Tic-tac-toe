@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(10, 10, 80);
+}
+
+h1{
+    color: red;
+    font-size: 90px;
+    text-align: center;
+}
+
+table{
+    border-spacing: 0px;
+    position: relative;
+    margin: auto;
+}
+
+td{
+    border: 3px ridge white;
+}
+
+button{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 150px;
+}
+
+#ujJatek{
+    height: 75px;
+    width: 150px;
+    font-size: 30px;
+    float: right;
+}
