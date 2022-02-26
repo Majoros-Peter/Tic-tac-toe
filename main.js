@@ -18,28 +18,48 @@ let btn8 = ""
 let btn9 = ""
 let xVagyKor = "O"
 
+function gombKikapcs() {
+    gomb1.disabled = true
+    gomb2.disabled = true
+    gomb3.disabled = true
+    gomb4.disabled = true
+    gomb5.disabled = true
+    gomb6.disabled = true
+    gomb7.disabled = true
+    gomb8.disabled = true
+    gomb9.disabled = true
+}
+
 function nyertes(nyertes){
     /*VÍZSZINTESEN ELLENŐRZÉS*/
     if (btn1 == nyertes && btn2 == nyertes && btn3 == nyertes) {
-        console.log(nyertes + " nyert!")
+        alert(nyertes + " nyert!")
+        gombKikapcs()
     } else if (btn4 == nyertes && btn5 == nyertes && btn6 == nyertes) {
-        console.log(nyertes + " nyert!")
+        alert(nyertes + " nyert!")
+        gombKikapcs()
     } else if (btn7 == nyertes && btn8 == nyertes && btn9 == nyertes) {
-        console.log(nyertes + " nyert!")
+        alert(nyertes + " nyert!")
+        gombKikapcs()
     }
     /*FÜGGŐLEGES ELLENŐRZÉS*/
     if (btn1 == nyertes && btn4 == nyertes && btn7 == nyertes) {
-        console.log(nyertes + " nyert!")
+        alert(nyertes + " nyert!")
+        gombKikapcs()
     } else if (btn2 == nyertes && btn5 == nyertes && btn8 == nyertes) {
-        console.log(nyertes + " nyert!")
+        alert(nyertes + " nyert!")
+        gombKikapcs()
     } else if (btn3 == nyertes && btn6 == nyertes && btn9 == nyertes) {
-        console.log(nyertes + " nyert!")
+        alert(nyertes + " nyert!")
+        gombKikapcs()
     }
     /*KERESZTBE ELLENŐRZÉS*/
     if (btn1 == nyertes && btn5 == nyertes && btn9 == nyertes) {
-        console.log(nyertes + " nyert!")
+        alert(nyertes + " nyert!")
+        gombKikapcs()
     } else if (btn7 == nyertes && btn5 == nyertes && btn3 == nyertes) {
-        console.log(nyertes + " nyert!")
+        alert(nyertes + " nyert!")
+        gombKikapcs()
     }
 }
 
